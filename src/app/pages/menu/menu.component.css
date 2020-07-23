@@ -1,0 +1,311 @@
+nav ul li {
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pre-navegador {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.linea-horizontal {
+    display: none;
+}
+
+.responsive-social {
+    display: none;
+}
+
+.logo {
+    width: 50%;
+}
+
+@media (max-width: 990px) {
+    /* Alineamos la imagen al centro */
+    .logo {
+        display: block;
+        margin: auto;
+    }
+    .lista-nosotros {
+        padding-top: 0px !important;
+        text-align: center !important;
+        padding-left: 0;
+    }
+    .boton-analisis {
+        display: block;
+        margin: auto;
+    }
+    .linea-horizontal {
+        display: block;
+    }
+    .desaparece {
+        display: none;
+    }
+    .social-icons {
+        display: none !important;
+    }
+    .responsive-social {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .youtube {
+        font-size: 20px;
+    }
+    .linkedin {
+        font-size: 20px;
+    }
+    .facebook {
+        font-size: 20px;
+    }
+    .contenedor-100,
+    .contenedor-lista {
+        position: static !important;
+    }
+    .hover:after {
+        content: none !important;
+    }
+    .display {
+        display: block;
+        padding-right: 10px;
+    }
+    .display button {
+        max-height: 40px !important;
+        max-width: 180px;
+    }
+    .contenedor-100 {
+        padding-top: 40px;
+        /* cambio */
+    }
+    .nosotros {
+        padding-bottom: 0 !important
+    }
+    /*
+    .dropdown-menu {
+        display: none;
+    }
+*/
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .soluciones-inline a {
+        display: inline-block;
+    }
+    .soluciones-inline i {
+        display: block !important;
+        padding-top: 11px;
+        font-size: 18px;
+        color: #FFFFFF;
+        float: right;
+    }
+    /* no sirve para nada
+    .display .boton-analisis span {
+        position: relative;
+        bottom: 6px;
+    }
+    */
+    .img-pasos {
+        padding: 10px;
+        margin: 0;
+    }
+    .boton-analisis-after {
+        display: block;
+        margin: 0 auto !important;
+    }
+}
+
+.fa-plus-circle {
+    display: none;
+}
+
+.nosotros {
+    padding-right: 0 !important
+}
+
+.lista-nosotros {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.lista-nosotros li {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+.lista-nosotros a {
+    color: #848484;
+}
+
+.separador {
+    color: gray;
+    font-size: 18px;
+}
+
+.social-icons {
+    vertical-align: middle;
+}
+
+.boton-analisis {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px 10px 20px;
+}
+
+.boton-analisis-bis:hover {
+    color: #FFFFFF;
+}
+
+.social-icon .facebook {
+    color: #3b5998;
+}
+
+.social-icon .linkedin {
+    color: #0e76a8;
+}
+
+.social-icon .youtube {
+    color: #c4302b;
+}
+
+
+/*  NAVBAR */
+
+.navegador {
+    position: sticky !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background-color: #0E2665;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    min-height: 65px;
+    z-index: 1000;
+}
+
+.navegador-after {
+    background-color: rgba(14, 38, 101, 0.8) !important;
+    padding-top: 7px;
+    /* cambio: ajustes*/
+    padding-bottom: 8px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* cambio se añade clase para el logo en blanco */
+
+.image-after {
+    display: none;
+    position: absolute;
+    left: 16px !important;
+    top: 10px;
+}
+
+.image-after img {
+    width: 80%;
+}
+
+.nav-home-icon {
+    padding: 0 !important;
+    margin-top: 4px;
+}
+
+.button-menu {
+    width: 164px;
+    padding: 0 !important;
+}
+
+.navegador a,
+.navegador a:hover,
+.navegador a:visited {
+    color: #FFFFFF;
+}
+
+.dropdown-menu {
+    background-color: #272727;
+    margin-top: -2px;
+    font-size: 14px;
+}
+
+.dropdown-divider {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 4px;
+    border-color: #7A7981;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #1992E8 !important;
+}
+
+.navbar-toggler {
+    position: absolute;
+    border-color: #FFFFFF;
+    background-color: #00B8FF;
+    font-size: 15px;
+    right: 10px;
+    top: 16px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* Esta madre es para la animacion del borde inferior en el menu */
+
+.hover:after {
+    content: '';
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    border-bottom: solid 3px #00B8FF;
+    /* This creates the border. Replace black with whatever color you want. */
+    /* width: 0; /* Change this to whatever width you want to have before hover. */
+    transform: scaleX(0);
+    padding-top: 12px;
+    /* cambio: This creates some space between the element and the border. */
+    transition: transform 300ms ease-in-out;
+    /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.hover:hover:after {
+    transform: scaleX(1);
+    /* width: 100%; /* This will be the new width of your border when on hover */
+}
+
+
+/* Hasta aqui termina la animacion */
+
+.contenedor-lista {
+    padding-top: 14px;
+}
+
+.contenedor-100,
+.contenedor-lista {
+    position: absolute;
+    right: 10px;
+    /* cambio: con esto pasamos e menu al a derecha */
+    min-height: inherit !important;
+}
+
+.display-none {
+    display: none;
+}
+
+.display {
+    display: block;
+    margin-left: auto;
+}
+
+.modal-open {
+    padding: 0 !important;
+    overflow-y: auto;
+}

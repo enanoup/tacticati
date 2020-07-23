@@ -1,0 +1,201 @@
+<!-- Prenavegador -->
+
+<div class="row justify-content-center pre-navegador" id="inicio">
+    <div class="col-11 col-sm-6 col-md-5 col-lg-4 align-self-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+        <img class="img-fluid logo" src="assets/images/tactica-ti-logo_v2.png">
+        <hr class="linea-horizontal">
+    </div>
+
+    <div class="col-12 col-lg-6 nosotros wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+        <ul class="lista-nosotros">
+            <li>
+                <a routerLink="nosotros">Nosotros</a>
+            </li>
+            <li>
+                <span class="separador">|</span>
+            </li>
+            <li>
+                <a href="http://tacticati.com/ostic/login.php" target="_blank">Centro de Soporte</a>
+            </li>
+            <li>
+                <span class="separador desaparece">|</span>
+            </li>
+            <li class="social-icons">
+                <a class="info-link" title="Facebook" href="https://www.facebook.com/tactica.ti.75" target="_blank">
+                    <span class="social-icon"><i class="fa fa-facebook-square fa-2x facebook image"></i></span>
+                </a>&nbsp;
+                <!--
+                <a class="info-link" title="Youtube" href="#" target="_blank">
+                    <span class="social-icon"><i class="fa fa-youtube-play fa-2x youtube image"></i></span>
+                </a>&nbsp;
+            -->
+                <a class="info-link" title="linkedin" href="https://www.linkedin.com/company/tactica_ti/" target="_blank">
+                    <span class="social-icon"><i class="fa fa-linkedin-square fa-2x linkedin image"></i></span>
+                </a>&nbsp;
+
+            </li>
+        </ul>
+    </div>
+
+    <!-- Esta solo se va a ver en moviles -->
+    <div class="col-12 responsive-social lista-nosotros wow fadeInDown">
+        <a class="info-link" title="Facebook" href="https://www.facebook.com/tactica.ti.75" target="_blank">
+            <span class="social-icon"><i class="fa fa-facebook-square facebook"></i></span>
+        </a>&nbsp;
+        <!--
+        <a class="info-link" title="Youtube" href="#" target="_blank">
+            <span class="social-icon"><i class="fa fa-youtube-play fa-2x youtube"></i></span>
+        </a>&nbsp;
+    -->
+        <a class="info-link" title="linkedin" href="https://www.linkedin.com/company/tactica_ti/" target="_blank">
+            <span class="social-icon"><i class="fa fa-linkedin-square linkedin"></i></span>
+        </a>&nbsp;
+    </div>
+    <div class="col-12 col-lg-2 align-self-center wow fadeIn text-center" data-wow-duration="1s" data-wow-delay="1s">
+        <button class="btn btn-warning boton-analisis" data-toggle="modal" data-target="#exampleModal">Análisis sin costo</button>
+    </div>
+</div>
+
+<!-- Iniciamos con el Navegador -->
+<nav id="menu" class="row navbar navbar-expand-lg navbar-light navegador sticky-top">
+
+    <!-- Este es el boton de Analisis sin costo que aparece solo en el navbar scrolling -->
+    <!--div id="button-2" class="display-none button-menu">
+    <button class="btn btn-warning boton-analisis boton-analisis-bis" data-toggle="modal" data-target="#exampleModal"><span>Análisis sin costo</span></button>
+</div-->
+
+    <div class="image-after">
+        <img class="img-fluid" width="100" src="assets/images/logo_tti_white.png">
+    </div>
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)='close()'>
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse contenedor-100" id="navbarSupportedContent">
+        <ul class="navbar-nav contenedor-lista wow fadeIn">
+            <li class="nav-item hover">
+                <a class="nav-link" href="#inicio" (click)="close()">Inicio</a>
+            </li>
+            <li class="nav-item dropdown hover">
+                <div class="soluciones-inline">
+                    <a class="nav-link dropdown-toggle" href="#soluciones" (click)="close()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Soluciones  
+                    </a>
+                    <i id="icon" class="fa fa-plus-circle" style="display:none" aria-hidden="true" (click)="open()"></i>
+                </div>
+                <div id="dropdown-menu-id" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="sapbusinessone">SAP Business One</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="analitica">Analítica de Datos</a>
+                </div>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#productos" (click)="close()">Productos</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#alianzas" (click)="close()">Alianzas</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#proceso" (click)="close()">Proceso</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="https://blog.tacticati.com" target="_blank" (click)="close()">Blog</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#contacto" (click)="close()">Contacto</a>
+            </li>
+            <li id="button-2" class="display-none button-menu text-center boton-analisis-after">
+                <button class="btn btn-warning boton-analisis" data-toggle="modal" data-target="#exampleModal">Análisis sin costo</button>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- Modal -->
+<div id="home-modal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: rgb(240, 248, 255);">
+            <form [formGroup]="tacticaForm" (ngSubmit)="tacticaSubmit(tacticaForm.value)">
+                <div class="modal-header">
+                    <h5 class="text-center" id="exampleModalLabel">Déjanos tus datos para agendar un análisis gratuito.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="reset()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre*">
+                        <div *ngIf="tacticaForm.controls['nombre'].invalid && tacticaForm.controls['nombre'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['nombre'].errors.required">
+                                Nombre es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="apellido" placeholder="Apellido*">
+                        <div *ngIf="tacticaForm.controls['apellido'].invalid && tacticaForm.controls['apellido'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['apellido'].errors.required">
+                                Apellido es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email*">
+                        <div *ngIf="tacticaForm.controls['email'].invalid && tacticaForm.controls['email'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['email'].errors.required">
+                                Email es requerido.
+                            </div>
+                            <div *ngIf="tacticaForm.controls['email'].errors.email">
+                                Email debe tener formato valido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="empresa" placeholder="Empresa*">
+                        <div *ngIf="tacticaForm.controls['empresa'].invalid && tacticaForm.controls['empresa'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['empresa'].errors.required">
+                                Empresa es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="telefono" placeholder="Teléfono*">
+                        <div *ngIf="tacticaForm.controls['telefono'].invalid && tacticaForm.controls['telefono'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['telefono'].errors.required">
+                                Teléfono es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select" id="inlineFormCustomSelect" [(ngModel)]='seleccion' formControlName="solucion" style="font-size: 14px; color:rgb(112, 112, 112)">
+                    <option value="" disabled>Selecciona una opción...</option>
+                    <option value="SAP Business One">SAP Business One</option>
+                    <option value="Analítica de Datos">Analítica de Datos</option>
+                    <option value="Office 365">Office 365</option>
+                </select>
+                        <div *ngIf="tacticaForm.controls['solucion'].invalid && tacticaForm.controls['solucion'].touched" class="alert alert-danger">
+                            <div *ngIf="tacticaForm.controls['solucion'].errors.required">
+                                Solución es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center pb-2">
+                            <re-captcha formControlName="recaptcha" style="display: inline-block;" (resolved)="resolved($event)" siteKey="{{siteKey}}">
+                            </re-captcha>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal" (click)="reset()">Cerrar</button>
+                    <button type="submit" class="btn btn-primary" [disabled]="!tacticaForm.valid">Solicitar Análisis</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

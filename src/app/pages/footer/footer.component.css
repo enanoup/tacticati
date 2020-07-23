@@ -1,0 +1,36 @@
+/* ::::::::::::::::: FOOTER  :::::::::::::: */
+
+.footer-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0E2665;
+}
+
+.icon-footer {
+   text-align: center;
+   padding-top: 14px;
+   color: #FFFFFF;
+   background-color: #0B1B47;
+   min-width: 60px; 
+   min-height: 60px; 
+   border-radius:150px;
+}
+
+.text-footer {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* ::::::::: GENERAL ::::::::: */
+
+/* Este es para arreglar la bronca de los espacios y que no se vea el stocky en moviles
+Se supone que va en el contenedor pero había varios DIVS que generaban espacios
+y al poner overflow desde el contenedor desacvtivaba el sticky menu así que se puso esta clase
+en cada sección  */
+.bronca-de-moviles {
+    overflow: hidden !important;
+}
+
+.aviso-privacidad:hover {
+    text-decoration-color: #FFFFFF;
+}

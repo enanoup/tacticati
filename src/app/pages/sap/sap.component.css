@@ -1,0 +1,760 @@
+nav ul li {
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pre-navegador {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.linea-horizontal{
+    display:none;
+}
+
+.responsive-social {
+    display: none;
+}
+
+.logo {
+    width: 600px !important;
+}
+
+@media (max-width : 990px) {
+    /* Alineamos la imagen al centro */
+    .logo{
+        display:block;
+        margin:auto;
+    }
+
+    .lista-nosotros {
+        padding-top: 0px !important;
+        text-align: center !important;
+        padding-left: 0;
+    }
+
+    .boton-analisis {
+        display:block;
+        margin:auto;
+    }
+
+    .linea-horizontal{
+        display:block;
+    }
+    .desaparece {
+        display: none;
+    }
+    .social-icons {
+        display:none !important;
+    }
+    .responsive-social {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .youtube{
+        font-size: 20px;
+    }
+    .linkedin {
+        font-size: 20px;
+    }
+    .facebook {
+        font-size: 20px;
+    }
+    .contenedor-100, .contenedor-lista {
+        position: static !important;
+    }
+    .hover:after {
+        content: none !important;
+    }
+    .display {
+        display: block;
+        padding-right: 10px;  
+    }
+    .display button {
+        max-height: 40px !important;
+        max-width: 180px;
+    }
+    .contenedor-100 {
+        padding-top: 40px; /* cambio */
+    }
+
+    .nosotros {
+        padding-bottom: 0 !important
+    }
+/*
+    .dropdown-menu {
+        display: none;
+    }
+*/
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .soluciones-inline a{
+        display: inline-block;
+    }
+
+    .soluciones-inline i {
+        display: block !important;
+        padding-top: 11px;
+        font-size: 18px;
+        color: #FFFFFF;
+        float: right;
+    }
+    /* no sirve para nada creo
+    .display .boton-analisis span {
+        position: relative;
+        bottom: 6px;
+    }
+    */
+    .boton-analisis-after {
+        display: block;
+        margin: 0 auto !important;
+    }
+
+}
+
+.fa-plus-circle {
+   display: none;
+}
+
+.nosotros {
+    padding-right: 0 !important
+}
+
+.lista-nosotros {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.lista-nosotros li {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+.lista-nosotros a {
+    color: #848484;
+}
+
+.separador {
+    color:gray;
+    font-size: 18px;
+}
+
+.social-icons {
+    vertical-align: middle;
+}
+
+.boton-analisis {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px 10px 20px;
+}
+
+.boton-analisis-bis:hover{
+    color: #FFFFFF;
+}
+
+.social-icon .facebook {
+    color:#3b5998;
+}
+
+.social-icon .linkedin {
+    color:#0e76a8;
+}
+
+.social-icon .youtube {
+    color:#c4302b;
+}
+
+/*  NAVBAR */
+
+.navegador {
+    position: sticky !important;
+    top:0 !important;
+    bottom:0 !important;
+    background-color: #696969;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    min-height: 65px;
+    z-index: 1000;
+}
+
+.navegador-after {
+    background-color: rgba(105,105,105, 0.8) !important;
+    padding-top: 7px; /* cambio: ajustes*/
+    padding-bottom: 8px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* cambio se añade clase para el logo en blanco */
+.image-after {
+    display: none;
+    position: absolute;
+    left: 16px !important;
+    top: 10px;
+}
+
+.image-after img {
+    width: 80%;
+}
+
+.nav-home-icon {
+    padding: 0 !important;
+    margin-top: 4px;
+}
+
+.button-menu {
+    width: 164px; 
+    padding: 0 !important;
+}
+
+.navegador a, .navegador a:hover, .navegador a:visited {
+    color: #FFFFFF;
+}
+
+.dropdown-menu {
+    background-color: #272727;
+    margin-top: -2px;
+    font-size: 14px;
+}
+.dropdown-divider {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 4px;
+    border-color: #7A7981;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color:#F1AA00 !important;
+}
+
+.dropdown-item:link {
+    background-color: transparent !important;
+}
+
+
+.navbar-toggler {
+    position: absolute;
+    border-color: #FFFFFF;
+    background-color: #F1AA00;
+    font-size: 15px;
+    right: 10px;
+    top: 16px;
+}
+
+.navbar-toggler-icon {
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Esta madre es para la animacion del borde inferior en el menu */
+.hover:after {
+    content: ''; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    border-bottom: solid 3px #F1AA00; /* This creates the border. Replace black with whatever color you want. */
+    /* width: 0; /* Change this to whatever width you want to have before hover. */
+    transform: scaleX(0);
+    padding-top: 12px; /* cambio: This creates some space between the element and the border. */
+    transition: transform 300ms ease-in-out; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.hover:hover:after {
+    transform: scaleX(1);
+   /* width: 100%; /* This will be the new width of your border when on hover */
+}
+/* Hasta aqui termina la animacion */ 
+
+
+.contenedor-lista {
+    padding-top: 14px; 
+}
+
+.contenedor-100, .contenedor-lista {
+    position: absolute;
+    right: 10px; /* cambio: con esto pasamos e menu al a derecha */
+    min-height: inherit !important; 
+   
+}
+
+.display-none {
+    display: none;
+}
+.display {
+    display: block;
+    margin-left: auto;
+}
+
+.modal-open{
+    padding: 0 !important;
+    overflow-y: auto;
+   }
+
+
+/* ::::::::::::: HOME SECTION :::::::::::::::: */
+
+.fa-home {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-section:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background:url('/assets/images/sap/fondo-sap.jpg') no-repeat center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.fondo-img-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.img-redonda {
+    width: 200px;
+    border-radius:150px;
+    border: solid 2px #FFFFFF;
+}
+
+.text-name {
+    color: rgba(255,255,255,0.8);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.span-home {
+    position: relative;
+    color:#F1AA00;
+    font-weight: bold;
+    top: -10px;
+}
+
+.img-sap {
+    border: solid 1px #FFFFFF;
+    box-shadow: 8px 8px 15px #2e2e2e;
+}
+
+.text-home {
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.text-home span {
+    font-family: 'Oswald';
+    font-weight: 500;
+    color: #F1AA00;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.test-2 {
+    border: solid 1px #FFFFFF;
+    margin: 0 !important;
+    /* background-color: rgba(153,153,153,0.1); */
+}
+
+/* :::::::::::::::: BENFICIOS ::::::::::::::::::: */
+.beneficios ul li {
+    list-style: none;
+    margin-top: 16px;
+}
+
+.beneficios ul li::before {
+    font-family: FontAwesome;
+    font-style: normal;
+    content: "\f00c" !important;  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #F1AA00 !important; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1.2em; /* Also needed for space (tweak if needed) */
+  }
+
+.beneficios {
+    background-color: #F3F3F3;
+}
+/* ::::::::  SOLUCIONES :::::::::::::: */
+
+.solutions-section {
+    background-color: #FFFFFF;
+}
+
+.nav .nav-item {
+    color:#999999 !important;
+}
+
+.nav-tabs .active > .tab {
+    color: #F1AA00 !important;
+}
+
+.nav-tabs .active > .tab > p{
+    color: #F1AA00 !important;
+}
+
+.image-solution {
+    filter: drop-shadow(5px 5px 0px #C8C8C8);
+}
+
+
+/* :::::::::::: SERVICIOS ::::::::::::: */
+
+.services-section {
+    background-color: #F3F3F3;
+}
+
+.vertical-nav {
+    border-radius: 0 !important;
+    color: #999999 !important;
+}
+.vertical-nav.active {
+    background-color: #F1AA00 !important;
+    color: #FFFFFF !important;
+}
+
+/* ::::::::::::::: FUNCIONALIDADES ::::::::::::::::::: */
+
+.funciones-section {
+    background-color: #FFFFFF;
+}
+
+.funcional div p{
+    font-weight: bolder;
+    line-height: 22px;
+}
+
+/*
+.modal p {
+    font-size: 14px;
+    line-height: 18px !important;
+}
+*/
+.modal-content-funcion h6 {
+    color: #F1AA00;
+}
+
+.modal-content-funcion p {
+    font-size: 14px;
+    line-height: 18px !important;
+}
+
+.horizontal-funcionalidad {
+    margin: 0;
+    padding: 0; 
+}
+
+.modal-funcion {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-funcion {
+    background-color: #fefefe;
+    margin: 12% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    overflow-y: auto !important;
+  }
+
+  @media (max-width : 990px) {
+
+    .modal-funcion {
+        position: fixed;
+    }
+
+    .modal-content-funcion {
+        margin: 20% auto;
+        width: 90% !important;
+        height: 480px;
+    }
+
+  }
+
+  .modal-content-funcion {
+      width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: relative;
+    bottom: 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #F1AA00;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* AQUI ES PARA AÑADIR EL EFECTO ZOOM EN HOVER A LAS IMÁGENES */ 
+.image:hover img{
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+  }
+
+  .image:hover p {
+      color: #F1AA00;
+  }
+
+  .image a:hover {
+    text-decoration: none;
+  }
+
+  .image{ overflow:hidden;}
+  .image img{
+      position:relative;
+  }
+  
+  .image img{
+      -moz-transition:all .8s ease;
+      -ms-transition:all .8s ease;
+      -o-transition:all .8s ease;
+      -webkit-transition:all .8s ease;
+      transition:all .8s ease;
+      width:75%;
+  }
+
+  /* ::::::::::::::::::: POST SECTION ::::::::::::::::::: */
+.post-section {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.post-section h3, .post-section p {
+    color: #FFFFFF;
+}
+
+.post-link a {
+    color: #FFFFFF;
+}
+
+.post-link a:visited {
+    color: #FFFFFF;
+}
+.line-height {
+    line-height: 22px;
+}
+
+/* EFECTO ZOOM EN HOVER A LAS IMÁGENES DE POSTS */ 
+.image-post:hover img{
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+  }
+
+  .image-post:hover p {
+      color: #F1AA00;
+  }
+
+  .image-post:hover a {
+    color: #F1AA00;
+}
+
+  .image-post a:hover {
+    text-decoration: none;
+  }
+
+  
+
+  .image-post { overflow:hidden;}
+  .image-post img{
+      position:relative;
+  }
+  
+  .image-post img{
+      -moz-transition:all .8s ease;
+      -ms-transition:all .8s ease;
+      -o-transition:all .8s ease;
+      -webkit-transition:all .8s ease;
+      transition:all .8s ease;
+  }
+
+  .post-carrusel-sap {
+      padding: 0;
+      margin: 0;
+  }
+  /* :::::::::::: PRICE SECTION ::::::::::::::::: */
+
+  .price-section {
+      background-color: #F3F3F3;
+  }
+
+  .precios hr {
+    display: block;
+    width: 70%;
+    margin: 6px 0 6px 0;
+    border: solid 1px #F1AA00;
+  }
+
+  @media (max-width : 990px) {
+    .precios hr {
+        margin: 0 auto !important; 
+      }
+
+    .precios h4 {
+        text-align: center;
+    }
+    .precios p {
+        text-align: center;
+    }
+  }
+
+  .letras-chiquitas p{
+    font-size: 12px;
+  }
+
+    .letras-chicas {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .precios ul li{
+        list-style: none;
+    }
+
+    .precios ul li::before {
+        content: "\2022" !important;  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #F1AA00 !important; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1.2em; /* Also needed for space (tweak if needed) */
+      }
+
+    .price h3{
+        padding-top: 20px;
+    }
+
+    .price ul {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .button-plan {
+ 
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .precios p {
+        margin-top: 20px;
+        line-height: 14px;
+    }
+
+    .texto-precios p{
+        line-height: 16px;
+    }
+
+/* :::::::::::::  CONTACTO ::::::::::::::: */
+
+.contacto {
+    background-color: #FFFFFF;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: solid 1px #C2C3C3 !important;
+}
+
+.img-bandera {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.form-container {
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+
+input, textarea {
+    border: solid 1px #C2C3C3;
+    font-size: 14px;
+}
+
+
+/* ::::::::::::::::: FOOTER  :::::::::::::: */
+
+.footer-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #4b4b4b;
+}
+
+.icon-footer {
+   text-align: center;
+   padding-top: 14px;
+   color: #FFFFFF;
+   background-color: #999999;
+   min-width: 60px; 
+   min-height: 60px; 
+   border-radius:150px;
+}
+
+.text-footer {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.aviso-privacidad:hover {
+    text-decoration-color: #FFFFFF;
+}
