@@ -200,6 +200,7 @@ ngOnInit() {
    // Nos traemos las últimas noticias de BI
    this.rss.getBIPosts().subscribe( rss => {
     this.rss.parseXML( rss, this.categoria ).then( (posts: any[]) => {
+      
       if (posts.length > 0) {
         // console.log(posts);
         this.biPosts = posts;

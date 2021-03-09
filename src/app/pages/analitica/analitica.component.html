@@ -2,29 +2,29 @@
 <div class="row justify-content-center pre-navegador" id="inicio">
     <div class="col-11 col-sm-6 col-md-5 col-lg-4 align-self-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
         <a routerLink="">
-            <img class="img-fluid logo" src="assets/images/tactica-ti-logo_v2.png"> 
-        </a> 
-       <hr class="linea-horizontal">  
+            <img class="img-fluid logo" src="assets/images/tactica-ti-logo_v2.png">
+        </a>
+        <hr class="linea-horizontal">
     </div>
-   
+
     <div class="col-12 col-lg-6 nosotros wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
 
-        <ul class="lista-nosotros" >
+        <ul class="lista-nosotros">
             <li>
-                <a routerLink="nosotros">Nosotros</a>    
+                <a routerLink="nosotros">Nosotros</a>
             </li>
             <li>
-                <span class="separador">|</span> 
+                <span class="separador">|</span>
             </li>
-            <li>    
+            <li>
                 <a href="http://tacticati.com/ostic/login.php" target="_blank">Centro de Soporte</a>
             </li>
             <li>
-                <span class="separador desaparece">|</span> 
+                <span class="separador desaparece">|</span>
             </li>
             <li class="social-icons">
                 <a class="info-link" title="Facebook" href="https://www.facebook.com/tactica.ti.75" target="_blank">
-                    <span class="social-icon" ><i class="fa fa-facebook-square fa-2x facebook image"></i></span>
+                    <span class="social-icon"><i class="fa fa-facebook-square fa-2x facebook image"></i></span>
                 </a>&nbsp;
                 <!--
                 <a class="info-link" title="Youtube" href="#" target="_blank">
@@ -34,15 +34,15 @@
                 <a class="info-link" title="linkedin" href="https://www.linkedin.com/company/tactica_ti/" target="_blank">
                     <span class="social-icon"><i class="fa fa-linkedin-square fa-2x linkedin image"></i></span>
                 </a>&nbsp;
-               
+
             </li>
         </ul>
     </div>
 
-     <!-- Esta solo se va a ver en moviles -->
+    <!-- Esta solo se va a ver en moviles -->
     <div class="col-12 responsive-social lista-nosotros wow fadeInDown">
         <a class="info-link" title="Facebook" href="https://www.facebook.com/tactica.ti.75" target="_blank">
-            <span class="social-icon" ><i class="fa fa-facebook-square facebook"></i></span>
+            <span class="social-icon"><i class="fa fa-facebook-square facebook"></i></span>
         </a>&nbsp;
         <!--
         <a class="info-link" title="Youtube" href="#" target="_blank">
@@ -54,14 +54,14 @@
         </a>&nbsp;
     </div>
     <div class="col-12 col-lg-2 align-self-center wow fadeIn text-center" data-wow-duration="1s" data-wow-delay="1s">
-        <button class="btn btn-primary boton-analisis" data-toggle="modal" data-target="#biModal">Demo en línea</button>
+        <button class="btn btn-primary boton-analisis" data-toggle="modal" data-target="#biModal">Análisis sin costo</button>
     </div>
 </div>
 
 <!-- Iniciamos con el Navegador -->
-<nav id="menu" class="row navbar navbar-expand-lg navbar-light navegador sticky-top" >
+<nav id="menu" class="row navbar navbar-expand-lg navbar-light navegador sticky-top">
 
- <!-- Este es el boton de Analisis sin costo que aparece solo en el navbar scrolling -->
+    <!-- Este es el boton de Analisis sin costo que aparece solo en el navbar scrolling -->
     <!--div id="button-2" class="display-none button-menu">
         <button class="btn btn-warning boton-analisis boton-analisis-bis" data-toggle="modal" data-target="#exampleModal"><span>Análisis sin costo</span></button>
     </div-->
@@ -72,137 +72,131 @@
         </a>
     </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-    aria-expanded="false" aria-label="Toggle navigation" (click)='close()'>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)='close()'>
       <span class="navbar-toggler-icon"></span>
     </button>
 
-<div class="collapse navbar-collapse contenedor-100" id="navbarSupportedContent" >
-  <ul class="navbar-nav mr-auto contenedor-lista wow fadeIn">
-    <li class="nav-item hover">
-        <a class="nav-link" routerLink="" (click)="close()">
-            <i class="fa fa-home" aria-hidden="true"></i>
-        </a>
-    </li>
-    <li class="nav-item hover">
-      <a class="nav-link" href="#inicio" (click)="close()">Inicio</a>
-    </li>
-    <li class="nav-item dropdown hover">
-        <div class="soluciones-inline">
-            <a class="nav-link dropdown-toggle" href="#soluciones-bi" (click)="close()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="collapse navbar-collapse contenedor-100" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto contenedor-lista wow fadeIn">
+            <li class="nav-item hover">
+                <a class="nav-link" routerLink="" (click)="close()">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#inicio" (click)="close()">Inicio</a>
+            </li>
+            <li class="nav-item dropdown hover">
+                <div class="soluciones-inline">
+                    <a class="nav-link dropdown-toggle" href="#soluciones-bi" (click)="close()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Soluciones  
             </a>
-            <i id="icon" class="fa fa-plus-circle" style="display:none" aria-hidden="true" (click)="open()"></i>
-        </div>
-      <div id="dropdown-menu-id" class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" routerLink="/sapbusinessone" >SAP Business One</a>
-            <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" (click)="close()">Analítica de Datos</a>
-      </div>
-    </li>
-    <li class="nav-item hover">
-        <a class="nav-link" href="#servicios-bi" (click)="close()">Servicios</a>
-    </li>
-    <li class="nav-item hover">
-        <a class="nav-link" href="#funcionalidades-bi" (click)="close()">Productos</a>
-    </li>
-    <li class="nav-item hover">
-        <a class="nav-link" href="#noticias" (click)="close()">Noticias</a>
-    </li>
-    <li class="nav-item hover">
-        <a class="nav-link" href="#precios-bi" (click)="close()">Precios</a>
-    </li>
-    <li id="button-2" class="display-none button-menu text-right boton-analisis-after">
-        <button class="btn btn-warning boton-analisis " data-toggle="modal" data-target="#biModal">Demo en línea</button>
-    </li>
-  </ul>
+                    <i id="icon" class="fa fa-plus-circle" style="display:none" aria-hidden="true" (click)="open()"></i>
+                </div>
+                <div id="dropdown-menu-id" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/sapbusinessone">SAP Business One</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" (click)="close()">Analítica de Datos</a>
+                </div>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#servicios-bi" (click)="close()">Servicios</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#funcionalidades-bi" (click)="close()">Productos</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#reportes" (click)="close()">Demo</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#noticias" (click)="close()">Noticias</a>
+            </li>
+            <li class="nav-item hover">
+                <a class="nav-link" href="#precios-bi" (click)="close()">Precios</a>
+            </li>
+            <li id="button-2" class="display-none button-menu text-right boton-analisis-after">
+                <button class="btn btn-warning boton-analisis " data-toggle="modal" data-target="#biModal">Análisis sin costo</button>
+            </li>
+        </ul>
 
-</div>
+    </div>
 </nav>
 
 <!-- Modal -->
 <div id="home-modal" class="modal fade" id="biModal" tabindex="-1" role="dialog" aria-labelledby="sapModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<form [formGroup]="analiticaForm" (ngSubmit)="demoSubmit(analiticaForm.value)" novalidate>
-  <div class="modal-content" style="background-color: #d7ebf3;">
-    <div class="modal-header">
-      <h5 class="text-center" id="sapModalLabel">Déjanos tus datos para obtener una demo en línea:</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="reset()">
+    <div class="modal-dialog" role="document">
+        <form [formGroup]="analiticaForm" (ngSubmit)="demoSubmit(analiticaForm.value)" novalidate>
+            <div class="modal-content" style="background-color: #d7ebf3;">
+                <div class="modal-header">
+                    <h5 class="text-center" id="sapModalLabel">Déjanos tus datos para agendar un análisis gratuito.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="reset()">
         <span aria-hidden="true">&times;</span>
       </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre*" required>
+                        <div *ngIf="analiticaForm.controls['nombre'].invalid && analiticaForm.controls['nombre'].touched" class="alert alert-danger">
+                            <div *ngIf="analiticaForm.controls['nombre'].errors.required">
+                                Nombre es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="apellido" placeholder="Apellido*" required>
+                        <div *ngIf="analiticaForm.controls['apellido'].invalid && analiticaForm.controls['apellido'].touched" class="alert alert-danger">
+                            <div *ngIf="analiticaForm.controls['nombre'].errors.required">
+                                Apellido es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Email*" required>
+                        <div *ngIf="analiticaForm.controls['email'].invalid && analiticaForm.controls['email'].touched" class="alert alert-danger">
+                            <div *ngIf="analiticaForm.controls['email'].errors.required">
+                                Email es requerido.
+                            </div>
+                            <div *ngIf="analiticaForm.controls['email'].errors.email">
+                                Email debe tener formato valido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="empresa" placeholder="Empresa*" required>
+                        <div *ngIf="analiticaForm.controls['empresa'].invalid && analiticaForm.controls['empresa'].touched" class="alert alert-danger">
+                            <div *ngIf="analiticaForm.controls['empresa'].errors.required">
+                                Empresa es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="telefono" placeholder="Teléfono*" required>
+                        <div *ngIf="analiticaForm.controls['telefono'].invalid && analiticaForm.controls['telefono'].touched" class="alert alert-danger">
+                            <div *ngIf="analiticaForm.controls['telefono'].errors.required">
+                                Teléfono es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center pb-2">
+                            <re-captcha formControlName="recaptcha" style="display: inline-block;" (resolved)="resolved($event)" siteKey="{{siteKey}}">
+                            </re-captcha>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal" (click)="reset()">Cerrar</button>
+                    <button type="submit" class="btn btn-primary" [disabled]="!analiticaForm.valid">Solicitar Análisis</button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="modal-body">
-            <div class="form-group">
-                <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre*" required>
-                <div *ngIf="analiticaForm.controls['nombre'].invalid && analiticaForm.controls['nombre'].touched"
-                    class="alert alert-danger">
-                    <div *ngIf="analiticaForm.controls['nombre'].errors.required">
-                        Nombre es requerido.
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" formControlName="apellido" placeholder="Apellido*" required>
-                <div *ngIf="analiticaForm.controls['apellido'].invalid && analiticaForm.controls['apellido'].touched"
-                    class="alert alert-danger">
-                    <div *ngIf="analiticaForm.controls['nombre'].errors.required">
-                        Apellido es requerido.
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" formControlName="email" placeholder="Email*" required>
-                <div *ngIf="analiticaForm.controls['email'].invalid && analiticaForm.controls['email'].touched"
-                    class="alert alert-danger">
-                    <div *ngIf="analiticaForm.controls['email'].errors.required">
-                        Email es requerido.
-                    </div>
-                    <div *ngIf="analiticaForm.controls['email'].errors.email">
-                        Email debe tener formato valido.
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" formControlName="empresa" placeholder="Empresa*" required>
-                <div *ngIf="analiticaForm.controls['empresa'].invalid && analiticaForm.controls['empresa'].touched"
-                class="alert alert-danger">
-                <div *ngIf="analiticaForm.controls['empresa'].errors.required">
-                    Empresa es requerido.
-                </div>
-            </div>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" formControlName="telefono" placeholder="Teléfono*" required>
-                <div *ngIf="analiticaForm.controls['telefono'].invalid && analiticaForm.controls['telefono'].touched"
-                class="alert alert-danger">
-                <div *ngIf="analiticaForm.controls['telefono'].errors.required">
-                    Teléfono es requerido.
-                </div>
-            </div>
-            </div>
-            <div class="form-group">
-                <div class="text-center pb-2">
-                    <re-captcha formControlName="recaptcha" style="display: inline-block;" 
-                        (resolved)="resolved($event)"
-                        siteKey="{{siteKey}}">  
-                    </re-captcha>
-                </div>
-            </div>
-    </div>
-    <div class="modal-footer">
-      <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal" (click)="reset()">Cerrar</button>
-      <button type="submit" class="btn btn-primary" [disabled]="!analiticaForm.valid">Solicitar Demo</button>
-    </div>
-  </div>
-</form>
-</div>
 </div>
 
 <section class="row home-section" id="home">
 
     <div class="col-12 home pt-2 pb-5">
-    
+
         <div class="row justify-content-center align-items-center test">
             <!--
             <div class="order-2 col-12 col-sm-8 col-md-2 order-md-1">
@@ -215,15 +209,14 @@
                  </div>
             </div> 
             -->
-            <div class="order-1 col-12 col-md-8 order-md-2 principal wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" >
+            <div class="order-1 col-12 col-md-8 order-md-2 principal wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="row justify-content-center wow fadeInRight">
 
                     <div class="col-12 align-self-center pt-3">
-                        <h5 class="text-home">"Ayudamos a establecer <span>mecanismos de control</span> sobre tu información,
-                            para que sirvan de apoyo en la <span>toma de decisiones."</span>
+                        <h5 class="text-home">"Ayudamos a establecer <span>mecanismos de control</span> sobre tu información, para que sirvan de apoyo en la <span>toma de decisiones."</span>
                         </h5>
                     </div>
-  
+
                     <!--div class="col-12 col-md-12 pt-3">
                         <h2 class="text-center text-white">En Táctica TI ofrecemos:</h2>
                         <div class="row owl-carousel carrrusel-text carrusel">
@@ -242,106 +235,106 @@
                         </div>
                         
                     </div-->
-                    
+
                 </div>
-            </div>
-    
-      </div>
-    
-    </div>
- 
-    </section>
-
-    <section class="row justify-content-center beneficios pt-5 pb-5">
-
-        <div class="col-9">
-
-            <div class="row justify-content-center">
-
-                <div class="col-12 col-md-8 col-lg-7 align-self-center wow fadeInLeft">
-
-                    <div class="wow fadeInDown">
-                        <h3 class="text-center"><strong>Con Táctica TI:</strong></h3>
-                        <hr>
-                    </div>
-                    <div class="beneficios-lista">
-                        <ul>
-                            <li>
-                                Analiza y obtén indicadores al instante para la toma de decisiones sobre tus datos de SAP Business One.
-                            </li>
-                            <li>
-                                Conoce la situación actual de tu información, así como el planteamiento de soluciones enfocadas a la explotación de los datos.
-                            </li>
-                            <li>
-                                Genera estrategias de negocio que den una ventaja competitiva.
-                            </li>
-                            <li>
-                                Construye una planeación adecuada conociendo lo que ha ocurrido, ocurrirá y debe ocurrir.
-                            </li>
-                            <li>
-                                Implementa mecanismos de control para monitorear la organización y lograr tus objetivos.
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                <div class="col-12 col-md-8 col-lg-5 align-self-center wow fadeInRight">
-                    <img class="img-fluid image-solution" src="assets/images/analitica/beneficios-bi.jpg">
-                </div>
-
             </div>
 
         </div>
-    </section>
 
-    <section class="row solutions-section" id="soluciones-bi" style="background-color: #FFFFFF;">
-    
-        <div class="col-12 pt-4 pb-5">
-        
+    </div>
+
+</section>
+
+<section class="row justify-content-center beneficios pt-5 pb-5">
+
+    <div class="col-9">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-7 align-self-center wow fadeInLeft">
+
+                <div class="wow fadeInDown">
+                    <h3 class="text-center"><strong>Con Táctica TI:</strong></h3>
+                    <hr>
+                </div>
+                <div class="beneficios-lista">
+                    <ul>
+                        <li>
+                            Analiza y obtén indicadores al instante para la toma de decisiones sobre tus datos de SAP Business One.
+                        </li>
+                        <li>
+                            Conoce la situación actual de tu información, así como el planteamiento de soluciones enfocadas a la explotación de los datos.
+                        </li>
+                        <li>
+                            Genera estrategias de negocio que den una ventaja competitiva.
+                        </li>
+                        <li>
+                            Construye una planeación adecuada conociendo lo que ha ocurrido, ocurrirá y debe ocurrir.
+                        </li>
+                        <li>
+                            Implementa mecanismos de control para monitorear la organización y lograr tus objetivos.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-8 col-lg-5 align-self-center wow fadeInRight">
+                <img class="img-fluid image-solution" src="assets/images/analitica/beneficios-bi.jpg">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="row solutions-section" id="soluciones-bi" style="background-color: #FFFFFF;">
+
+    <div class="col-12 pt-4 pb-5">
+
         <div class="row justify-content-center pt-5">
             <div class="col-10 col-md-4 text-center wow fadeInDown">
                 <h3><strong>Soluciones</strong></h3>
                 <hr>
             </div>
         </div>
-       
-        
+
+
         <div class="row justify-content-center">
 
             <div class="col-12 col-md-9 col-lg-8 pt-3 pb-3 wow fadeInUp">
 
                 <nav>
                     <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                      <a class="col-4 nav-item nav-link text-center pt-4 active" id="nav-cloud-tab" data-toggle="tab" href="#nav-cloud" role="tab" aria-controls="nav-cloud" aria-selected="true">
-                        <div class="tab">
-                            <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
-                            <p class="text-center">BIaaS</p>
-                        </div>  
-                      </a>
-                      <a class="col-4 nav-item nav-link text-center pt-4" id="nav-promise-tab" data-toggle="tab" href="#nav-promise" role="tab" aria-controls="nav-promise" aria-selected="false">
-                        <div class="tab">
-                            <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
-                            <p>A la medida</p>
-                        </div>
-                      </a>
-                      <a class="col-4 nav-item nav-link text-center pt-4" id="nav-mobile-tab" data-toggle="tab" href="#nav-mobile" role="tab" aria-controls="nav-mobile" aria-selected="false">
-                        <div class="tab">
-                            <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
-                            <p>Movilidad</p>
-                        </div>
-                      </a>
+                        <a class="col-4 nav-item nav-link text-center pt-4 active" id="nav-cloud-tab" data-toggle="tab" href="#nav-cloud" role="tab" aria-controls="nav-cloud" aria-selected="true">
+                            <div class="tab">
+                                <i class="fa fa-cloud fa-3x" aria-hidden="true"></i>
+                                <p class="text-center">BIaaS</p>
+                            </div>
+                        </a>
+                        <a class="col-4 nav-item nav-link text-center pt-4" id="nav-promise-tab" data-toggle="tab" href="#nav-promise" role="tab" aria-controls="nav-promise" aria-selected="false">
+                            <div class="tab">
+                                <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+                                <p>A la medida</p>
+                            </div>
+                        </a>
+                        <a class="col-4 nav-item nav-link text-center pt-4" id="nav-mobile-tab" data-toggle="tab" href="#nav-mobile" role="tab" aria-controls="nav-mobile" aria-selected="false">
+                            <div class="tab">
+                                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                                <p>Movilidad</p>
+                            </div>
+                        </a>
                     </div>
                 </nav>
-                  <div class="tab-content" id="nav-tabContent">
-            
+                <div class="tab-content" id="nav-tabContent">
+
                     <div class="tab-pane fade show active" id="nav-cloud" role="tabpanel" aria-labelledby="nav-cloud-tab">
                         <div class="row justify-content-center align-items-center p-3">
                             <div class="col-10 col-md-4">
                                 <img class="img-fluid image-solution" src="assets/images/analitica/funciones-biaas.jpg" />
                             </div>
                             <div class="col-10 col-md-8 pt-3">
-                               <h2>BIaaS</h2>
-                               <p>Indicadores pre-construidos por industria en esquema de renta mensual por usuario conectados a una o más fuentes de datos.</p> 
+                                <h2>BIaaS</h2>
+                                <p>Indicadores pre-construidos por industria en esquema de renta mensual por usuario conectados a una o más fuentes de datos.</p>
                             </div>
                         </div>
                     </div>
@@ -369,37 +362,37 @@
                             </div>
                         </div>
                     </div>
-                  </div>  
+                </div>
 
             </div>
 
         </div>
 
     </div>
-        
-    </section>
 
-    <section class="row justify-content-center services-section" id="servicios-bi">
+</section>
 
-        <div class="col-12 col-lg-10 pt-4 pb-5">
+<section class="row justify-content-center services-section" id="servicios-bi">
 
-            <div class="row justify-content-center pt-5 pb-3">
-                <div class="col-10 col-md-4 text-center wow fadeInDown">
-                    <h3><strong>Servicios</strong></h3>
-                    <hr>
-                </div>
+    <div class="col-12 col-lg-10 pt-4 pb-5">
+
+        <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-10 col-md-4 text-center wow fadeInDown">
+                <h3><strong>Servicios</strong></h3>
+                <hr>
             </div>
+        </div>
 
-            <div class="row justify-content-center wow fadeInUp">
-                <div class="col-10 col-md-3">
-                  <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="row justify-content-center wow fadeInUp">
+            <div class="col-10 col-md-3">
+                <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link vertical-nav active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Implementación</a>
                     <a class="nav-link vertical-nav" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soporte</a>
                     <a class="nav-link vertical-nav" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Cursos</a>
-                  </div>
                 </div>
-                <div class="col-10 col-md-8">
-                  <div class="tab-content pt-3" id="v-pills-tabContent">
+            </div>
+            <div class="col-10 col-md-8">
+                <div class="tab-content pt-3" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <div class="row justify-content-center">
                             <div class="order-2 col-10 col-md-7 order-md-1 pt-3">
@@ -407,7 +400,7 @@
                                 <p class="text-justify">Servicios de puesta en marcha de proyectos completos y/o específicos para nuevos clientes o clientes actuales.</p>
                             </div>
                             <div class="order-1 col-10 col-md-5 order-md-2">
-                                <img class="img-fluid" src="assets/images/analitica/servicios-impl.jpg"> 
+                                <img class="img-fluid" src="assets/images/analitica/servicios-impl.jpg">
                             </div>
                         </div>
                     </div>
@@ -418,10 +411,10 @@
                                 <p class="text-justify">Atención especializada para garantizar el buen funcionamiento de los indicadores.</p>
                             </div>
                             <div class="order-1 col-10 col-md-5 order-md-2">
-                                <img class="img-fluid" src="assets/images/analitica/servicios-soporte.jpg"> 
+                                <img class="img-fluid" src="assets/images/analitica/servicios-soporte.jpg">
                             </div>
                         </div>
-                       
+
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <div class="row justify-content-center">
@@ -430,73 +423,73 @@
                                 <p class="text-justify">Habilitación técnica para el mantenimiento y/o generación de nuevos indicadores.</p>
                             </div>
                             <div class="order-1 col-10 col-md-5 order-md-2">
-                                <img class="img-fluid" src="assets/images/analitica/servicios-cursos.jpg"> 
+                                <img class="img-fluid" src="assets/images/analitica/servicios-cursos.jpg">
                             </div>
                         </div>
-                       
-                    </div>
-                  </div>
-                </div>
-              </div>
 
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </section>
+    </div>
 
-    <section class="row funciones-section" id="funcionalidades-bi">
-        <div class="col-12 pt-4 pb-5">
+</section>
 
-            <div class="row justify-content-center pt-5">
-                <div class="col-10 col-md-4 text-center wow fadeInDown">
-                    <h3><strong>Productos</strong></h3>
-                    <hr>
-                </div>
+<section class="row funciones-section" id="funcionalidades-bi">
+    <div class="col-12 pt-4 pb-5">
+
+        <div class="row justify-content-center pt-5">
+            <div class="col-10 col-md-4 text-center wow fadeInDown">
+                <h3><strong>Productos</strong></h3>
+                <hr>
             </div>
-
-            <div class="row justify-content-center align-items-center text-center wow fadeInUp funcional pb-5">
-                <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-1 image">
-                    <a href="#" id="item-1" (click)="openModal('icon-1')">
-                        <img class="img-fluid image-funcion" src="assets/images/analitica/PowerBI_Amarillo_Trans.png">
-                    </a>
-                </div>
-                <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-3 image">
-                    <a href="#" id="item-3" (click)="openModal('icon-3')" >
-                        <img class="img-fluid image-funcion" src="assets/images/analitica/sap-hana-logo.png">
-                    </a>
-                </div>
-                <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-2 image-analytics">
-                    <a href="#" id="item-2" (click)="openModal('icon-2')">
-                        <img class="img-fluid image-funcion" src="assets/images/analitica/sapanalytics-logo.png">
-                    </a>
-                </div>
-            </div>
-
-            <!-- The Modal -->
-            <div *ngFor="let modal of modals" id="{{modal.id}}" class="modal-funcion">
-                <!-- Modal content -->
-                <div class="modal-content-funcion animated fadeInDown faster">
-                    <div class="row">
-                        <div class="col-10">
-                            <h6><strong>{{modal.title}}</strong></h6>
-                        </div>
-                        <div class="col-2 align-items-right">
-                            <span class="close" (click)="closeModal()">&times;</span>
-                        </div>  
-                    </div>
-                    <div class="row pl-3 pr-3">
-                        <p> {{ modal.descripcion }}</p>
-                    </div>
-                    <div class="row" *ngFor="let funcionalidad of modal.funcionalidades">
-                        <div class="col-12">
-                            <hr class="horizontal-funcionalidad">
-                            <p class="pt-2 pb-2" style="margin: 0 !important"><strong>{{ funcionalidad.funcion }}</strong> - {{funcionalidad.descripcion}}</p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
         </div>
-    </section>
+
+        <div class="row justify-content-center align-items-center text-center wow fadeInUp funcional pb-5">
+            <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-1 image">
+                <a href="#" id="item-1" (click)="openModal('icon-1')">
+                    <img class="img-fluid image-funcion" src="assets/images/analitica/PowerBI_Amarillo_Trans.png">
+                </a>
+            </div>
+            <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-3 image">
+                <a href="#" id="item-3" (click)="openModal('icon-3')">
+                    <img class="img-fluid image-funcion" src="assets/images/analitica/sap-hana-logo.png">
+                </a>
+            </div>
+            <div class="col-7 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-2 image-analytics">
+                <a href="#" id="item-2" (click)="openModal('icon-2')">
+                    <img class="img-fluid image-funcion" src="assets/images/analitica/sapanalytics-logo.png">
+                </a>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div *ngFor="let modal of modals" id="{{modal.id}}" class="modal-funcion">
+            <!-- Modal content -->
+            <div class="modal-content-funcion animated fadeInDown faster">
+                <div class="row">
+                    <div class="col-10">
+                        <h6><strong>{{modal.title}}</strong></h6>
+                    </div>
+                    <div class="col-2 align-items-right">
+                        <span class="close" (click)="closeModal()">&times;</span>
+                    </div>
+                </div>
+                <div class="row pl-3 pr-3">
+                    <p> {{ modal.descripcion }}</p>
+                </div>
+                <div class="row" *ngFor="let funcionalidad of modal.funcionalidades">
+                    <div class="col-12">
+                        <hr class="horizontal-funcionalidad">
+                        <p class="pt-2 pb-2" style="margin: 0 !important"><strong>{{ funcionalidad.funcion }}</strong> - {{funcionalidad.descripcion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
 
@@ -592,10 +585,101 @@
     </section> 
 -->
 
+<!-- SECCION REPORTES DINÁMICOS -->
+<section class="row justify-content-center pb-5 reportes-section" id="reportes">
+
+    <div class="col-9 pt-4 pb-5">
+
+        <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-10 col-md-5 text-center wow fadeInDown">
+                <h3><strong>Demostración de Informes</strong></h3>
+                <hr style="border-color: #FFFFFF;">
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 col-12 pt-5 text-center wow fadeInUp" data-wow-delay="400ms">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNDg0NDM5ZTItNmIxYi00NDEwLWI1NzktN2Q4NzViZWFmNDdhIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank">
+                    <div class="card option">
+                        <div class="box">
+                            <img class="img-fluid pt-3" src="../assets/images/analitica/Artboard-3.png" />
+                            <!--h5 class="card-header">VENTAS</h5-->
+                            <!--i class="fa fa-bar-chart fa-3x pt-3" aria-hidden="true"></i-->
+                            <hr>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Ventas SAP B1</h5>
+                            <p class="card-text">Análisis de ventas al instante para la toma de decisiones sobre tus datos de SAP Business One.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDg0NDM5ZTItNmIxYi00NDEwLWI1NzktN2Q4NzViZWFmNDdhIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank" class="btn btn-primary">Ver reporte</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pt-5 text-center wow fadeInUp" data-wow-delay="500ms">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNDZiNWRjNGUtZDQyYi00N2MzLTliZjQtMzBjOTZkMzExZWZhIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank">
+                    <div class="card option">
+                        <div class="box">
+                            <img class="img-fluid pt-3" src="../assets/images/analitica/Artboard-37.png" />
+                            <!--h5 class="card-header">FINANZAS</h5-->
+                            <!--i class="fa fa-calculator fa-3x pt-3" aria-hidden="true"></i-->
+                            <hr>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Finanzas SAP B1</h5>
+                            <p class="card-text">Análisis financieros al instante para la toma de decisiones sobre tus datos de SAP Business One.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDZiNWRjNGUtZDQyYi00N2MzLTliZjQtMzBjOTZkMzExZWZhIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank" class="btn btn-primary">Ver reporte</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pt-5 text-center wow fadeInUp" data-wow-delay="600ms">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjA0ZTNkN2QtMGZiYy00YmUzLThkY2MtNmI2OGIwNTdjMjRiIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank">
+                    <div class="card option">
+                        <div class="box">
+                            <img class="img-fluid pt-3" src="../assets/images/analitica/Artboard-19.png" />
+                            <!--h5 class="card-header">INVENTARIOS</h5-->
+                            <!--i class="fa fa-calendar-check-o fa-3x pt-3" aria-hidden="true"></i-->
+                            <hr>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Inventarios SAP B1</h5>
+                            <p class="card-text">Análisis de inventarios al instante para la toma de decisiones sobre tus datos de SAP Business One.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYjA0ZTNkN2QtMGZiYy00YmUzLThkY2MtNmI2OGIwNTdjMjRiIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank" class="btn btn-primary">Ver reporte</a>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 pt-5 text-center wow fadeInUp" data-wow-delay="700ms">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiODU1YjFkZmEtZTIwYi00NWYyLTgxNDQtNWEyYWI2ZTQ0ZWExIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank">
+                    <div class="card option">
+                        <div class="box">
+                            <img class="img-fluid pt-3" src="../assets/images/analitica/Artboard-31.png" />
+                            <!--h5 class="card-header">COMPRAS</h5-->
+                            <!--i class="fa fa-shopping-cart fa-3x pt-3" aria-hidden="true"></i-->
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Compras SAP B1</h5>
+                            <p class="card-text" style="font-size: 14px;">Análisis de compras al instante para la toma de decisiones sobre tus datos de SAP Business One.</p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiODU1YjFkZmEtZTIwYi00NWYyLTgxNDQtNWEyYWI2ZTQ0ZWExIiwidCI6ImZjNTQ1NGYyLTM0M2YtNGU3MS04M2U1LTU4ODI3OGFmZDI0OCIsImMiOjR9" target="_blank" class="btn btn-primary">Ver reporte</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
 <section class="row justify-content-center price-section" id="precios-bi">
 
     <div class="col-9 pt-4 pb-5">
-        
+
         <div class="row justify-content-center pt-5">
             <div class="col-10 col-md-4 text-center wow fadeInDown">
                 <h3><strong>Precios BIaaS</strong></h3>
@@ -609,7 +693,7 @@
                 <h4>Precio por usuario</h4>
                 <h4>a partir de <span><strong>150 USD.</strong></span></h4>
                 <hr>
-             
+
                 <p>Contrato mínimo a 12 meses con 3 usuarios.</p>
             </div>
             <div class="col-12 col-md-5 col-lg-4 align-self-end precios">
@@ -633,7 +717,7 @@
                 </ul>
             </div>
             <div class="col-12 col-md-5 col-lg-4 align-self-end precios">
-                <ul> 
+                <ul>
                     <li>
                         Disponibilidad de informes de los siguientes módulos:
                         <ul class="sub-lista">
@@ -646,10 +730,10 @@
                         </ul>
 
                     </li>
-                   
+
                 </ul>
             </div>
-        
+
         </div>
 
         <div class="row">
@@ -679,25 +763,25 @@
 
         <div class="row justify-content-center pt-5 pb-3">
             <div class="col-10 col-md-4 text-center wow fadeInDown">
-                <h3 ><strong>Últimas Noticias</strong></h3>
+                <h3><strong>Últimas Noticias</strong></h3>
                 <hr style="border-color: #FFFFFF;">
             </div>
         </div>
 
         <div class="row justify-content-center owl-carousel post-carrusel-bi wow fadeInUp">
             <div class="col-12 image-post post-link" *ngFor="let post of biPosts">
-                
+
                 <a href="{{post.link}}" target="_blank">
                     <!-- Se hizo una inyección de código en un snippet de WP, 
                     para insertar la url de la imagen en el atributo comments -->
-                    <img class="img-fluid" src="{{post.comments[0]}}">
+                    <img class="img-fluid" src="{{post.guid[0]._}}">
                     <div class="pt-4">
-                        <h5 class="text-left post-link">
+                        <h5 class="text-center post-link">
                             <strong>{{ post.title }}</strong>
                         </h5>
                         <p class="text-justify line-height pt-2">{{ post.description }}</p>
                     </div>
-                    
+
                 </a>
             </div>
         </div>
@@ -706,56 +790,56 @@
 
 </section>
 
-    <section class="row bronca-de-moviles">
+<section class="row bronca-de-moviles">
 
-        <div class="col-12">
-            <div class="row footer-section justify-content-center">
-                <div class="col-12 col-sm-10 col-md-4 col-lg-4">
-    
-                    <div class="row justify-content-center wow fadeIn">
-                        <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3" >
-                            <i class="fa fa-map-marker fa-2x icon-footer" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
-                            <h5 class="text-white"><strong>Oficinas Centrales</strong></h5>
-                            <p class="text-footer">Córdoba 49, Piso 3. Roma Norte.<br>Alc. Cuauhtémoc. CDMX. 06700</p>
-                        </div>
+    <div class="col-12">
+        <div class="row footer-section justify-content-center">
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+
+                <div class="row justify-content-center wow fadeIn">
+                    <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3">
+                        <i class="fa fa-map-marker fa-2x icon-footer" aria-hidden="true"></i>
                     </div>
-    
-                </div>
-                <div class="col-12 col-sm-10 col-md-4 col-lg-4">
-    
-                    <div class="row justify-content-center wow fadeIn">
-                        <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3">
-                            <i class="fa fa-phone fa-2x icon-footer" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
-                            <h5 class="text-white"><strong>Llámanos</strong></h5>
-                            <p class="text-footer"><strong>Oficina:</strong> (55) 8914-0187 o (55) 8437-8877 <br> <strong>Soporte:</strong> (55) 8437-8876</p>
-                        </div>
+                    <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
+                        <h5 class="text-white"><strong>Oficinas Centrales</strong></h5>
+                        <p class="text-footer">Colima 158, Piso 1, Ofic. 1.<br>Roma Norte. Cuauhtémoc. CDMX. 06700</p>
                     </div>
-    
                 </div>
-                <div class="col-12 col-sm-10 col-md-4 col-lg-4">
-    
-                    <div class="row justify-content-center wow fadeIn">
-                        <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3">
-                            <i class="fa fa-envelope-open-o fa-2x icon-footer" 
-                            aria-hidden="true"></i>
-                        </div>
-                        <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
-                            <h5 class="text-white"><strong>Email</strong></h5>
-                            <p class="text-footer">contacto@tacticati.com</p>
-                        </div>
+
+            </div>
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+
+                <div class="row justify-content-center wow fadeIn">
+                    <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3">
+                        <i class="fa fa-phone fa-2x icon-footer" aria-hidden="true"></i>
                     </div>
-    
+                    <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
+                        <h5 class="text-white"><strong>Llámanos</strong></h5>
+                        <p class="text-footer"><strong>Oficina:</strong> (55) 8914-0187 o (55) 8437-8877 <br> <strong>Soporte:</strong> (55) 8437-8876</p>
+                    </div>
                 </div>
+
+            </div>
+            <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+
+                <div class="row justify-content-center wow fadeIn">
+                    <div class="col-10 text-center col-sm-12 col-lg-4 align-items-lg-baseline text-lg-right pt-3">
+                        <i class="fa fa-envelope-open-o fa-2x icon-footer" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10 text-center col-sm-10 col-lg-8 pt-3 text-lg-left">
+                        <h5 class="text-white"><strong>Email</strong></h5>
+                        <p class="text-footer">contacto@tacticati.com</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        
-        <div class="col-12 pt-3" style="background-color: #1B1B1B;">
-            <a class="aviso-privacidad" routerLink="aviso"><p class="text-center text-white" >Aviso de Privacidad</p></a> 
-            <p class="text-center text-white">Copyright 2020 Táctica TI. Todos los Derechos Reservados</p>
-        </div>
-    </section>
+    </div>
 
+    <div class="col-12 pt-3" style="background-color: #1B1B1B;">
+        <a class="aviso-privacidad" routerLink="aviso">
+            <p class="text-center text-white">Aviso de Privacidad</p>
+        </a>
+        <p class="text-center text-white">Copyright 2021 Táctica TI. Todos los Derechos Reservados</p>
+    </div>
+</section>

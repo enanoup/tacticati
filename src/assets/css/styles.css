@@ -1,82 +1,107 @@
 /* Typography
 ================================================== */
+
 @font-face {
     font-family: 'gilroy';
     src: url("../fonts/gilroy/gilroy-light-webfont.eot");
     src: url("../fonts/gilroy/gilroy-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-light-webfont.woff") format("woff"), url("../fonts/gilroy/gilroy-light-webfont.ttf") format("truetype"), url("../fonts/gilroy/gilroy-light-webfont.svg#gilroylight") format("svg");
     font-weight: 400;
     font-style: normal;
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'gilroy';
     src: url("../fonts/gilroy/gilroy-extrabold-webfont.eot");
     src: url("../fonts/gilroy/gilroy-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy/gilroy-extrabold-webfont.woff") format("woff"), url("../fonts/gilroy/gilroy-extrabold-webfont.ttf") format("truetype"), url("../fonts/gilroy/gilroy-extrabold-webfont.svg#gilroyextrabold") format("svg");
     font-weight: 700;
     font-style: normal;
-  }
+}
+
+
 /* vietnamese */
+
 @font-face {
     font-family: 'Asap';
     font-style: normal;
     font-weight: 400;
     src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v11/KFOoCniXp96ayzQe4GZNCzcFKw.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
+}
+
+
+/* latin-ext */
+
+@font-face {
     font-family: 'Asap';
     font-style: normal;
     font-weight: 400;
     src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v11/KFOoCniXp96ayzUe4GZNCzcFKw.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
+}
+
+
+/* latin */
+
+@font-face {
     font-family: 'Asap';
     font-style: normal;
     font-weight: 400;
     src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v11/KFOoCniXp96ayzse4GZNCzc.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
 
-  body, p{
-      font-weight: 400;
-      line-height: 30px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; 
-  }
-  
-  html{
-      /* overflow-x: hidden !important; */
-      min-width: 100% !important;
-      height: 100%; 
-      scroll-behavior: smooth;
-  }
-  
-  body{
-      border: 0;
-      margin: 0;
-      min-width: 100% !important;
-      font-size: 15px;
-  }
-  
-  .nav-link:link,
-  .nav-link:visited {
+body,
+p {
+    font-weight: 400;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    /* overflow-x: hidden !important; */
+    min-width: 100% !important;
+    height: 100%;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    min-width: 100% !important;
+    font-size: 15px;
+}
+
+.nav-link:link,
+.nav-link:visited {
     text-decoration: none !important;
-    color:#FFFFFF !important;  
-  }
+    color: #FFFFFF !important;
+}
 
-  h1, h2, h3, h4, h5, h6, p, a, span, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+label {
     font-family: Asap;
-  }
+}
 
-  h6 {
+h6 {
     font-size: 20px !important;
-  }
-  h6, p {
-    color: dimgray;
-  }
+}
 
-  h3 {
+h6,
+p {
+    color: dimgray;
+}
+
+h3 {
     color: #363D43;
-  }
+}

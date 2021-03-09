@@ -339,7 +339,7 @@ export class SapComponent implements OnInit {
 
   ngOnInit() {
     // Nos traemos las últimas noticias de SAP
-      this.rss.getBIPosts().subscribe( rss => {
+      this.rss.getSAPPosts().subscribe( rss => {
         this.rss.parseXML( rss, this.categoria ).then( (posts: any[]) => {
           if (posts.length > 0) {
             // console.log(posts);
